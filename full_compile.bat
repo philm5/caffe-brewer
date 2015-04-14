@@ -9,4 +9,5 @@ call setup_paths
 
 echo Compiling...
 REM Add --with-python to build the python interface.
-scons --with-tests --with-tools --jobs=1
+REM  1>std.out 2>std.err
+scons --with-tests --with-tools --jobs=8
