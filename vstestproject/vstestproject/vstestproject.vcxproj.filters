@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\objects\absval_layer.obj" />
+    <Object Include="..\..\objects\accuracy_layer.obj" />
+    <Object Include="..\..\objects\argmax_layer.obj" />
+    <Object Include="..\..\objects\base_conv_layer.obj" />
+    <Object Include="..\..\objects\base_data_layer.obj" />
+    <Object Include="..\..\objects\benchmark.obj" />
+    <Object Include="..\..\objects\blob.obj" />
+    <Object Include="..\..\objects\bnll_layer.obj" />
+    <Object Include="..\..\objects\caffe.pb.obj" />
+    <Object Include="..\..\objects\common.obj" />
+    <Object Include="..\..\objects\concat_layer.obj" />
+    <Object Include="..\..\objects\contrastive_loss_layer.obj" />
+    <Object Include="..\..\objects\conv_layer.obj" />
+    <Object Include="..\..\objects\cudnn_conv_layer.obj" />
+    <Object Include="..\..\objects\cudnn_pooling_layer.obj" />
+    <Object Include="..\..\objects\cudnn_relu_layer.obj" />
+    <Object Include="..\..\objects\cudnn_sigmoid_layer.obj" />
+    <Object Include="..\..\objects\cudnn_softmax_layer.obj" />
+    <Object Include="..\..\objects\cudnn_tanh_layer.obj" />
+    <Object Include="..\..\objects\data_layer.obj" />
+    <Object Include="..\..\objects\data_transformer.obj" />
+    <Object Include="..\..\objects\db.obj" />
+    <Object Include="..\..\objects\deconv_layer.obj" />
+    <Object Include="..\..\objects\dropout_layer.obj" />
+    <Object Include="..\..\objects\dummy_data_layer.obj" />
+    <Object Include="..\..\objects\eltwise_layer.obj" />
+    <Object Include="..\..\objects\euclidean_loss_layer.obj" />
+    <Object Include="..\..\objects\exp_layer.obj" />
+    <Object Include="..\..\objects\flatten_layer.obj" />
+    <Object Include="..\..\objects\hdf5_data_layer.obj" />
+    <Object Include="..\..\objects\hdf5_output_layer.obj" />
+    <Object Include="..\..\objects\hinge_loss_layer.obj" />
+    <Object Include="..\..\objects\im2col.obj" />
+    <Object Include="..\..\objects\im2col_layer.obj" />
+    <Object Include="..\..\objects\image_data_layer.obj" />
+    <Object Include="..\..\objects\infogain_loss_layer.obj" />
+    <Object Include="..\..\objects\inner_product_layer.obj" />
+    <Object Include="..\..\objects\insert_splits.obj" />
+    <Object Include="..\..\objects\internal_thread.obj" />
+    <Object Include="..\..\objects\io.obj" />
+    <Object Include="..\..\objects\layer_factory.obj" />
+    <Object Include="..\..\objects\loss_layer.obj" />
+    <Object Include="..\..\objects\lrn_layer.obj" />
+    <Object Include="..\..\objects\math_functions.obj" />
+    <Object Include="..\..\objects\memory_data_layer.obj" />
+    <Object Include="..\..\objects\multinomial_logistic_loss_layer.obj" />
+    <Object Include="..\..\objects\mvn_layer.obj" />
+    <Object Include="..\..\objects\net.obj" />
+    <Object Include="..\..\objects\neuron_layer.obj" />
+    <Object Include="..\..\objects\pooling_layer.obj" />
+    <Object Include="..\..\objects\power_layer.obj" />
+    <Object Include="..\..\objects\prelu_layer.obj" />
+    <Object Include="..\..\objects\relu_layer.obj" />
+    <Object Include="..\..\objects\sigmoid_cross_entropy_loss_layer.obj" />
+    <Object Include="..\..\objects\sigmoid_layer.obj" />
+    <Object Include="..\..\objects\silence_layer.obj" />
+    <Object Include="..\..\objects\slice_layer.obj" />
+    <Object Include="..\..\objects\softmax_layer.obj" />
+    <Object Include="..\..\objects\softmax_loss_layer.obj" />
+    <Object Include="..\..\objects\solver.obj" />
+    <Object Include="..\..\objects\split_layer.obj" />
+    <Object Include="..\..\objects\syncedmem.obj" />
+    <Object Include="..\..\objects\tanh_layer.obj" />
+    <Object Include="..\..\objects\threshold_layer.obj" />
+    <Object Include="..\..\objects\upgrade_proto.obj" />
+    <Object Include="..\..\objects\window_data_layer.obj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0CE3A4C-F1F2-4AF2-AC62-A3BFDF0E4587}</ProjectGuid>
+    <RootNamespace>vstestproject</RootNamespace>
+    <ProjectName>vstestproject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\mdb\libraries\liblmdb;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\leveldb\include;C:\libraries\openblas\include;C:\libraries\hdf5-1.8.14\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\gflags-2.1.1\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\glog-0.3.3\src\windows;C:\libraries\protobuf-2.6.1\src;C:\libraries\boost_1_57_0;C:\Users\Philipp\Documents\git\caffe-brewer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Philipp\Documents\git\caffe-brewer\lib;C:\libraries\protobuf-2.6.1\vsprojects\x64\Release;C:\libraries\opencv\build\x64\vc12\lib;C:\libraries\openblas\lib;C:\libraries\hdf5-1.8.14\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\x64;C:\libraries\boost_1_57_0\stage\lib;C:\Users\Philipp\Documents\git\caffe-brewer\objects;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>absval_layer.obj;accuracy_layer.obj;argmax_layer.obj;base_conv_layer.obj;base_data_layer.obj;benchmark.obj;blob.obj;bnll_layer.obj;caffe.pb.obj;common.obj;concat_layer.obj;contrastive_loss_layer.obj;conv_layer.obj;cudnn_conv_layer.obj;cudnn_pooling_layer.obj;cudnn_relu_layer.obj;cudnn_sigmoid_layer.obj;cudnn_softmax_layer.obj;cudnn_tanh_layer.obj;data_layer.obj;data_transformer.obj;db.obj;deconv_layer.obj;dropout_layer.obj;dummy_data_layer.obj;eltwise_layer.obj;euclidean_loss_layer.obj;exp_layer.obj;flatten_layer.obj;hdf5_data_layer.obj;hdf5_output_layer.obj;hinge_loss_layer.obj;im2col.obj;im2col_layer.obj;image_data_layer.obj;infogain_loss_layer.obj;inner_product_layer.obj;insert_splits.obj;internal_thread.obj;io.obj;layer_factory.obj;loss_layer.obj;lrn_layer.obj;math_functions.obj;memory_data_layer.obj;multinomial_logistic_loss_layer.obj;mvn_layer.obj;net.obj;neuron_layer.obj;pooling_layer.obj;power_layer.obj;prelu_layer.obj;relu_layer.obj;sigmoid_cross_entropy_loss_layer.obj;sigmoid_layer.obj;silence_layer.obj;slice_layer.obj;softmax_layer.obj;softmax_loss_layer.obj;solver.obj;split_layer.obj;syncedmem.obj;tanh_layer.obj;threshold_layer.obj;upgrade_proto.obj;window_data_layer.obj;caffe-gpu.lib;gflags.lib;glog.lib;leveldb.lib;mdb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\mdb\libraries\liblmdb;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\leveldb\include;C:\libraries\openblas\include;C:\libraries\hdf5-1.8.14\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\gflags-2.1.1\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\glog-0.3.3\src\windows;C:\libraries\protobuf-2.6.1\src;C:\libraries\boost_1_57_0;C:\Users\Philipp\Documents\git\caffe-brewer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ITERATOR_DEBUG_LEVEL=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\libraries\protobuf-2.6.1\vsprojects\x64\Debug;C:\Users\Philipp\Documents\git\caffe-brewer\lib;C:\libraries\opencv\build\x64\vc12\lib;C:\libraries\openblas\lib;C:\libraries\hdf5-1.8.14\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\x64;C:\libraries\boost_1_57_0\stage\lib;C:\Users\Philipp\Documents\git\caffe-brewer\objects;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>caffe-gpu.lib;gflags.lib;glog.lib;leveldb.lib;mdb.lib;cudart.lib;cublas.lib;curand.lib;libprotobuf.lib;boost_date_time-vc120-mt-1_57.lib;boost_system-vc120-mt-gd-1_57.lib;boost_filesystem-vc120-mt-1_57.lib;boost_thread-vc120-mt-1_57.lib;hdf5.lib;hdf5_hl.lib;opencv_imgproc2410d.lib;opencv_highgui2410d.lib;opencv_core2410d.lib;libopenblas.dll.a.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\mdb\libraries\liblmdb;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\leveldb\include;C:\libraries\openblas\include;C:\libraries\hdf5-1.8.14\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\gflags-2.1.1\include;C:\Users\Philipp\Documents\git\caffe-brewer\dependencies\glog-0.3.3\src\windows;C:\libraries\protobuf-2.6.1\src;C:\libraries\boost_1_57_0;C:\Users\Philipp\Documents\git\caffe-brewer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\libraries\protobuf-2.6.1\vsprojects\x64\Release;C:\Users\Philipp\Documents\git\caffe-brewer\lib;C:\libraries\opencv\build\x64\vc12\lib;C:\libraries\openblas\lib;C:\libraries\hdf5-1.8.14\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\x64;C:\libraries\boost_1_57_0\stage\lib;C:\Users\Philipp\Documents\git\caffe-brewer\objects;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>caffe-gpu.lib;gflags.lib;glog.lib;leveldb.lib;mdb.lib;cudart.lib;cublas.lib;curand.lib;libprotobuf.lib;boost_date_time-vc120-mt-1_57.lib;boost_system-vc120-mt-gd-1_57.lib;boost_filesystem-vc120-mt-1_57.lib;boost_thread-vc120-mt-1_57.lib;hdf5.lib;hdf5_hl.lib;opencv_imgproc2410.lib;opencv_highgui2410.lib;opencv_core2410.lib;libopenblas.dll.a.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\objects\absval_layer.obj" />
+    <Object Include="..\..\objects\accuracy_layer.obj" />
+    <Object Include="..\..\objects\argmax_layer.obj" />
+    <Object Include="..\..\objects\base_conv_layer.obj" />
+    <Object Include="..\..\objects\base_data_layer.obj" />
+    <Object Include="..\..\objects\benchmark.obj" />
+    <Object Include="..\..\objects\blob.obj" />
+    <Object Include="..\..\objects\bnll_layer.obj" />
+    <Object Include="..\..\objects\caffe.pb.obj" />
+    <Object Include="..\..\objects\common.obj" />
+    <Object Include="..\..\objects\concat_layer.obj" />
+    <Object Include="..\..\objects\contrastive_loss_layer.obj" />
+    <Object Include="..\..\objects\conv_layer.obj" />
+    <Object Include="..\..\objects\cudnn_conv_layer.obj" />
+    <Object Include="..\..\objects\cudnn_pooling_layer.obj" />
+    <Object Include="..\..\objects\cudnn_relu_layer.obj" />
+    <Object Include="..\..\objects\cudnn_sigmoid_layer.obj" />
+    <Object Include="..\..\objects\cudnn_softmax_layer.obj" />
+    <Object Include="..\..\objects\cudnn_tanh_layer.obj" />
+    <Object Include="..\..\objects\data_layer.obj" />
+    <Object Include="..\..\objects\data_transformer.obj" />
+    <Object Include="..\..\objects\db.obj" />
+    <Object Include="..\..\objects\deconv_layer.obj" />
+    <Object Include="..\..\objects\dropout_layer.obj" />
+    <Object Include="..\..\objects\dummy_data_layer.obj" />
+    <Object Include="..\..\objects\eltwise_layer.obj" />
+    <Object Include="..\..\objects\euclidean_loss_layer.obj" />
+    <Object Include="..\..\objects\exp_layer.obj" />
+    <Object Include="..\..\objects\flatten_layer.obj" />
+    <Object Include="..\..\objects\hdf5_data_layer.obj" />
+    <Object Include="..\..\objects\hdf5_output_layer.obj" />
+    <Object Include="..\..\objects\hinge_loss_layer.obj" />
+    <Object Include="..\..\objects\im2col.obj" />
+    <Object Include="..\..\objects\im2col_layer.obj" />
+    <Object Include="..\..\objects\image_data_layer.obj" />
+    <Object Include="..\..\objects\infogain_loss_layer.obj" />
+    <Object Include="..\..\objects\inner_product_layer.obj" />
+    <Object Include="..\..\objects\insert_splits.obj" />
+    <Object Include="..\..\objects\internal_thread.obj" />
+    <Object Include="..\..\objects\io.obj" />
+    <Object Include="..\..\objects\layer_factory.obj" />
+    <Object Include="..\..\objects\loss_layer.obj" />
+    <Object Include="..\..\objects\lrn_layer.obj" />
+    <Object Include="..\..\objects\math_functions.obj" />
+    <Object Include="..\..\objects\memory_data_layer.obj" />
+    <Object Include="..\..\objects\multinomial_logistic_loss_layer.obj" />
+    <Object Include="..\..\objects\mvn_layer.obj" />
+    <Object Include="..\..\objects\net.obj" />
+    <Object Include="..\..\objects\neuron_layer.obj" />
+    <Object Include="..\..\objects\pooling_layer.obj" />
+    <Object Include="..\..\objects\power_layer.obj" />
+    <Object Include="..\..\objects\prelu_layer.obj" />
+    <Object Include="..\..\objects\relu_layer.obj" />
+    <Object Include="..\..\objects\sigmoid_cross_entropy_loss_layer.obj" />
+    <Object Include="..\..\objects\sigmoid_layer.obj" />
+    <Object Include="..\..\objects\silence_layer.obj" />
+    <Object Include="..\..\objects\slice_layer.obj" />
+    <Object Include="..\..\objects\softmax_layer.obj" />
+    <Object Include="..\..\objects\softmax_loss_layer.obj" />
+    <Object Include="..\..\objects\solver.obj" />
+    <Object Include="..\..\objects\split_layer.obj" />
+    <Object Include="..\..\objects\syncedmem.obj" />
+    <Object Include="..\..\objects\tanh_layer.obj" />
+    <Object Include="..\..\objects\threshold_layer.obj" />
+    <Object Include="..\..\objects\upgrade_proto.obj" />
+    <Object Include="..\..\objects\window_data_layer.obj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
