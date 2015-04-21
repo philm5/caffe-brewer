@@ -11,7 +11,7 @@ set PROTOC=%PROTOBUF_ROOT%\vsprojects\x64\Release\protoc.exe
 
 IF NOT "%CAFFE_BREWER_ADDED_PATH%"=="" goto notextending
   echo Extending path!
-  set PATH=%PATH%;%OPENCV_ROOT%\x64\vc12\bin;%HDF5_ROOT%\bin;%OPENBLAS_ROOT%\bin;C:\libraries\boost_1_57_0\stage\lib
+  set PATH=%PATH%;%OPENCV_ROOT%\x64\vc12\bin;%HDF5_ROOT%\bin;%OPENBLAS_ROOT%\bin;%BOOST_ROOT%\stage\lib
   set CAFFE_BREWER_ADDED_PATH=1
   goto end
 :notextending

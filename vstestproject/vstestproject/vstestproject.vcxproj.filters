@@ -87,4 +87,15 @@
     <Object Include="..\..\objects\upgrade_proto.obj" />
     <Object Include="..\..\objects\window_data_layer.obj" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\caffe-framework\examples\images\cat.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\caffe-framework\examples\images\cat_gray.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\caffe-framework\examples\images\fish-bike.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
